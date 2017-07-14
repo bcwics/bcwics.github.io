@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Computress</title>
+		<link rel="stylesheet" type="text/css" href="computress/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Lato" rel="stylesheet">
+	</head>
+	<body>
+		<section class = "intro">
+			<div id='root'>
+				<div data-text='Computress' id='text'>
+					Computress
+				</div>
+				<h3>Coming December 2017</h3>
+				<!-- <a href="#faq"><h3>#FAQ</h3></a> -->
+				<h3>#For Sponsors</h3>
+			</div>
+		</section>
+
+		<!-- Will be added in at later date
+		<h1 style="text-align: center;">FAQ</h1>
+		<section class = "faq">
+			<h3> </h3>	
+		</section>
+		<-->
+
+		<script type="text/javascript">
+			drawLines();
+
+			function getHeight() {
+				return (
+					window.innerHeight ||
+					document.documentElement.clientHeight ||
+					document.body.clientHeight
+				);
+			}
+
+			function drawLines() {
+				var lines = document.getElementsByClassName("line");
+				if (lines.length) {
+					for (var i = 0; i < lines.length; i++) {
+						document.body.removeChild(lines[i]);
+					}
+				}
+
+				var height = getHeight();
+				for (i = 0; i < height / 10; i++) {
+					var line = document.createElement("div");
+					line.className = "line line-" + i;
+					line.style.top = i * 10 + "px";
+					var time = Math.random() * 5;
+					line.style.animation = "lines " + time + "s infinite";
+					document.body.appendChild(line);
+				}
+			}
+
+			window.onresize = function(event) {
+				drawLines();
+			};
+		</script>
+	</body>
+</html>
