@@ -1,30 +1,365 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Computress</title>
-		<link rel="stylesheet" type="text/css" href="computress/css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Lato" rel="stylesheet">
-	</head>
-	<body>
-		<section class = "intro">
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Computress</title>		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Lato|Merriweather|Oswald:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="computress/css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="computress/css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="computress/css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="computress/css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="computress/css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="computress/css/media-queries.css">
+		<!-- Modernizer Script for old Browsers -->
+        <script src="computress/js/modernizr-2.6.2.min.js"></script>
+    </head>
+	
+    <body id="body">
+        <header id="navigation" class="navbar-fixed-top navbar">
+            <div class="container">
+                <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </button>					
+                    <a class="navbar-brand" href="#body">
+						<h1 style="font-size: large; padding-top: 20px;">
+							Computress: An All Women's Hackathon
+						</h1>
+					</a>
+                </div>
+
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="current"><a href="#body">Home</a></li>
+                        <li><a href="#what">What</a></li>
+                        <li><a href="#why">Why</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Intro -->
+        <section class = "home">
 			<div id='root'>
 				<div data-text='Computress' id='text'>
 					Computress
 				</div>
-				<h3>Coming December 2017</h3>
-				<!-- <a href="#faq"><h3>#FAQ</h3></a> 
-				<h3>#For Sponsors</h3>-->
+				<br><br><br>
+				<h3>Coming December 2017</h3>				
 			</div>
 		</section>
 
-		<!-- Will be added in at later date
-		<h1 style="text-align: center;">FAQ</h1>
-		<section class = "faq">
-			<h3> </h3>	
+		<!-- What is Computress -->
+		<section id="what" class="works clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="sec-title text-center">
+						<h2>48 Hours to play, learn, and connect through tech.</h2>
+						<div class="devider"><i class="fa fa-bolt fa-lg" style="color:#1CFFB8;"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center">
+						<p>Computress is a women's hackathon created on the belief that the chance to program and design creations that go beyond classroom code is a powerful opportunity.</p>
+					</div>
+		
+					<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+						<ul class="text-center">
+							<li><a href="javascript:;" class="active filter" style="background-color: #FF3CEE;">Sign up to attend!</a></li>
+							<li><a href="http://bit.ly/ComputressSponsors" class="active filter">Interested in helping?</a></li>
+						</ul>
+					</div>					
+				</div>
+			</div>
 		</section>
-		<-->
 
+		<section id="img1" class="img1">
+			<div class="parallax-overlay"></div>
+		</section>
+
+        <!-- Why -->
+		<section id="why" class="why">
+			<div class="container">
+				<div class="row">
+					<div class="sec-title text-center mb50 wow animated" data-wow-duration="500ms">
+						<h2>Why Attend?</h2>
+						<div class="devider"><i class="fa fa-eye fa-lg" style="color:#1CFFB8;"></i></div>
+					</div>
+
+					<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-rocket fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Learn</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-cogs fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Build</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-users fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Expand</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="img2" class="img2">
+			<div class="parallax-overlay2"></div>
+		</section>
+
+		<!-- FAQs -->
+		<section id="faq" class="faq">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center mb50 wow animated" data-wow-duration="500ms">
+						<h2>FAQ</h2>
+						<div class="devider"><i class="fa fa-comments-o fa-lg" style="color:#1CFFB8;"></i></div>
+					</div>
+
+					<div class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>What is Computress?</h3>
+								<p>The Brooklyn College Women in Computer Science club is hosting its first ever all-women hackathon! Come to Computress and bring a friend for a free, coding competition jam packed with activities, food, and the chance to meet other women in tech.</p>
+							</div>
+						</div>
+					</div>			
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Is Computress free to attend?</h3>
+								<p>Yes it is! The event includes admission, food, and a lot of free gear and swag!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Who can come?</h3>
+								<p>Any and all above 18 female and non-binary identified students and professionals.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Do I need coding experience?</h3>
+								<p>Nope. Just bring yourself and a computer! There will lots of opportunities to learn at the hackathon.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Who’s organizing this whole thing anyways?</h3>
+								<p>The Brooklyn College Women in Computer Science Club. For more information, you can visit <a href="https://bcwics.github.io/"> bcwics.github.io </a> or contact bcwomenincompsci@gmail.com!</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>Can I volunteer/mentor?</h3>
+								<p>Of course! Please contact bcwomenincompsci@gmail.com with details on how you’re interested in assisting.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>I represent a company, how can we help?</h3>
+								<p>There are many ways you can help, including, but not limited to, sponsorship! Please refer to the <a href="http://bit.ly/ComputressSponsors"> following document </a> or contact bcwomenincompsci@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icons">
+								<i class="fa fa-paper-plane fa-2x"></i>
+							</div>
+							
+							<div class="service-desc">
+								<h3>What should I bring?</h3>
+								<p>You must bring a valid student or government issued ID card for admission. Bring your laptop and charging cables and any other specific materials you’ll need for your hacking project. Everything else will be provided!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Us -->		
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="row mb50">
+				
+					<div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+						<h2>Have questions?</h2>
+						<div class="devider"><i class="fa fa-heart-o fa-lg" style="color:#1CFFB8;"></i></div>
+					</div>
+					
+					<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+						<p>This hackathon is organized by the Brooklyn College Women in Computer Science Club.</p>
+					</div>
+					
+					<!-- contact address -->
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+						<div class="contact-address">
+							<h3>Find us on social media:</h3>
+						</div>
+				
+						<ul class="footer-social">
+							<a href="https://www.facebook.com/BCWomenInCS/"><i class="fa fa-facebook fa-2x" style="color: #FF3CEE;"></i>  </a>
+							<a href="https://twitter.com/BCWiCS"><i class="fa fa-twitter fa-2x" style="color: #FF3CEE;"></i>   </a>
+							<a href="https://www.instagram.com/BCWiCS/"><i class="fa fa-instagram fa-2x" style="color: #FF3CEE;"></i></a>
+							<a href="https://bcwics.github.io/"><i class="fa fa-globe fa-2x" style="color: #FF3CEE;"></i></a>
+						</ul>
+					</div>
+
+					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="contact-form">
+							<h3> Drop us a line!</h3>
+							<form action="https://formspree.io/bcwomenincompsci@gmail.com" method="POST" id="contact-form">
+								<div class="input-group name-email">
+									<div class="input-field">
+										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+									</div>
+								</div>
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+								</div>
+								<div class="input-group">
+									<input type="submit" id="form-submit" class="pull-right" value="Send message">
+								</div>
+							</form>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+	
+		<footer id="footer">
+			<ul class="menu">
+				<li>Copyright © 2017 <a href="https://bcwics.github.io/">Brooklyn College Women in Computer Science Club</a>.</li>
+			</ul>
+		</footer>
+		
+		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+        <script src="computress/js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="computress/js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="computress/js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="computress/js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="computress/js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="computress/js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="computress/js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="computress/js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- jquery easing -->
+        <script src="computress/js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="computress/js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="computress/js/custom.js"></script>
+		
 		<script type="text/javascript">
+			/*Text Animation*/
 			drawLines();
 
 			function getHeight() {
@@ -58,5 +393,62 @@
 				drawLines();
 			};
 		</script>
-	</body>
+
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+    </body>
 </html>
